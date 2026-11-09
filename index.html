@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UK Law Life Quest</title>
+  <meta name="description" content="A free game for learning UK law from birth to retirement: animated explainers, quizzes, real court stories and official references. Made for teenagers and curious adults.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="top">
+    <a class="brand" href="#/" aria-label="UK Law Life Quest home">
+      <span class="brand-mark">⚖️</span>
+      <span class="brand-name">Law Life Quest <small>UK</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#/" data-nav="home">Journey</a>
+      <a href="#/arcade" data-nav="arcade">Arcade</a>
+      <a href="#/stories" data-nav="stories">Stories</a>
+      <a href="#/library" data-nav="library">Library</a>
+      <a href="#/passport" data-nav="passport">Passport</a>
+    </nav>
+    <div class="top-tools">
+      <a class="xp-chip" href="#/passport" id="xpChip" title="Your rank and XP"></a>
+      <button class="icon-btn" id="soundBtn" aria-label="Toggle sound" title="Sound">🔊</button>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode" title="Light / dark">🌙</button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="foot">
+    <p><strong>For learning, not legal advice.</strong> Content checked against public sources in November 2026. Laws change and differ between England, Wales, Scotland and Northern Ireland, so always follow the official links before relying on anything here.</p>
+    <p>Need help now? <a href="https://www.childline.org.uk/" target="_blank" rel="noopener">Childline 0800 1111</a> · <a href="https://www.citizensadvice.org.uk/" target="_blank" rel="noopener">Citizens Advice</a> · Emergency: 999</p>
+  </footer>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data/00-core.js"></script>
+  <script src="js/data/01-birth-school-teen.js"></script>
+  <script src="js/data/02-justice-adult-study.js"></script>
+  <script src="js/data/03-work-road-health.js"></script>
+  <script src="js/data/04-money-family-retire-death.js"></script>
+  <script src="js/data/05-stories.js"></script>
+  <script src="js/data/06-arcade.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
